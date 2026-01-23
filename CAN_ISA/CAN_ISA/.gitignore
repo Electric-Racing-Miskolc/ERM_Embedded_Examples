@@ -1,0 +1,29 @@
+# Eclipse
+.metadata
+.settings
+[Rr]elease
+[Dd]ebug
+
+Drivers/
+Middlewares/
+Common/
+gcc/
+
+*.launch
+*.ld
+.cproject
+.mxproject
+
+.vscode
+
+# TouchGFX
+**/TouchGFX/build/
+**/TouchGFX/generated/
+**/TouchGFX/config
+**/TouchGFX/simulator
+
+# Libraries
+FATFS/
+LIBJPEG/
+/Utilities/
+USB_HOST/

@@ -1,0 +1,811 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "Screen1",
+        "CanvasBufferSize": 19200,
+        "Components": [
+          {
+            "Type": "TextArea",
+            "Name": "txtMINTemp",
+            "X": 54,
+            "Y": 728,
+            "Width": 456,
+            "Height": 48,
+            "TextId": "__SingleUse_MDJC",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_V1P5",
+              "UseBuffer": true,
+              "BufferSize": 5
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "txtAVGTemp",
+            "X": 54,
+            "Y": 680,
+            "Width": 456,
+            "Height": 48,
+            "TextId": "__SingleUse_13E3",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_POEF",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "txtMAXTemp",
+            "X": 54,
+            "Y": 632,
+            "Width": 456,
+            "Height": 48,
+            "TextId": "__SingleUse_FUQO",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_TT4M",
+              "UseBuffer": true,
+              "BufferSize": 5
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "txtMINVolt",
+            "X": 510,
+            "Y": 728,
+            "Width": 516,
+            "Height": 48,
+            "TextId": "__SingleUse_GWS7",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_3938",
+              "UseBuffer": true,
+              "BufferSize": 6
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "txtAVGVolt",
+            "X": 510,
+            "Y": 680,
+            "Width": 516,
+            "Height": 48,
+            "TextId": "__SingleUse_SKFM",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_H6AV",
+              "UseBuffer": true,
+              "BufferSize": 6
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "txtMAXVolt",
+            "X": 510,
+            "Y": 632,
+            "Width": 516,
+            "Height": 48,
+            "TextId": "__SingleUse_4XM9",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_HXXL",
+              "UseBuffer": true,
+              "BufferSize": 6
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "segmentNum_1",
+            "X": 1248,
+            "Y": 40,
+            "Width": 25,
+            "Height": 48,
+            "LockPosition": true,
+            "TextId": "__SingleUse_FR7G",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "segmentNum_2",
+            "X": 1248,
+            "Y": 161,
+            "Width": 25,
+            "Height": 48,
+            "LockPosition": true,
+            "TextId": "__SingleUse_H5F9",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "segmentNum_3",
+            "X": 1248,
+            "Y": 282,
+            "Width": 25,
+            "Height": 48,
+            "LockPosition": true,
+            "TextId": "__SingleUse_9Y9V",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "segmentNum_4",
+            "X": 1248,
+            "Y": 404,
+            "Width": 25,
+            "Height": 48,
+            "LockPosition": true,
+            "TextId": "__SingleUse_8P9S",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "segmentNum_5",
+            "X": 1248,
+            "Y": 525,
+            "Width": 25,
+            "Height": 48,
+            "LockPosition": true,
+            "TextId": "__SingleUse_R0ZJ",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "accumulator_temp_segment1_4",
+            "Y": 484,
+            "Width": 1280,
+            "Height": 121,
+            "LockPosition": true,
+            "CustomContainerDefinitionName": "Accumulator_temp_1_segment"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "accumulator_temp_segment1_3",
+            "Y": 363,
+            "Width": 1280,
+            "Height": 121,
+            "LockPosition": true,
+            "CustomContainerDefinitionName": "Accumulator_temp_1_segment"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "accumulator_temp_segment1_2",
+            "Y": 242,
+            "Width": 1280,
+            "Height": 121,
+            "LockPosition": true,
+            "CustomContainerDefinitionName": "Accumulator_temp_1_segment"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "accumulator_temp_segment1_1",
+            "Y": 121,
+            "Width": 1280,
+            "Height": 121,
+            "LockPosition": true,
+            "CustomContainerDefinitionName": "Accumulator_temp_1_segment"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "accumulator_temp_segment1",
+            "Width": 1280,
+            "Height": 121,
+            "LockPosition": true,
+            "CustomContainerDefinitionName": "Accumulator_temp_1_segment"
+          }
+        ],
+        "Interactions": []
+      }
+    ],
+    "CustomContainerDefinitions": [
+      {
+        "Name": "Accumulator_temp_1_segment",
+        "Width": 1280,
+        "Height": 121,
+        "Components": [
+          {
+            "Type": "LineProgress",
+            "Name": "lineProgress1",
+            "X": 37,
+            "Y": 10,
+            "Width": 18,
+            "Height": 100,
+            "Color": {
+              "Green": 240,
+              "Blue": 255
+            },
+            "StartX": 9.0,
+            "StartY": 100.0,
+            "EndX": 9.0,
+            "LineWidth": 18.0,
+            "LineEndingStyle": "Butt",
+            "Preset": "alternate_theme\\presets\\lineprogress\\lines\\thick\\tiny_active_90.json",
+            "FileNameBackground": "__generated\\alternate_theme_images_widgets_lineprogress_backgrounds_line_thick_tiny_90.png",
+            "ProgressRangeMax": 100,
+            "ProgressInitialValue": 50
+          },
+          {
+            "Type": "LineProgress",
+            "Name": "lineProgress1_10",
+            "X": 598,
+            "Y": 10,
+            "Width": 18,
+            "Height": 100,
+            "Color": {
+              "Green": 240,
+              "Blue": 255
+            },
+            "StartX": 9.0,
+            "StartY": 100.0,
+            "EndX": 9.0,
+            "LineWidth": 18.0,
+            "LineEndingStyle": "Butt",
+            "Preset": "alternate_theme\\presets\\lineprogress\\lines\\thick\\tiny_active_90.json",
+            "FileNameBackground": "__generated\\alternate_theme_images_widgets_lineprogress_backgrounds_line_thick_tiny_90.png",
+            "ProgressRangeMax": 100,
+            "ProgressInitialValue": 60
+          },
+          {
+            "Type": "LineProgress",
+            "Name": "lineProgress1_9",
+            "X": 542,
+            "Y": 10,
+            "Width": 18,
+            "Height": 100,
+            "Color": {
+              "Green": 240,
+              "Blue": 255
+            },
+            "StartX": 9.0,
+            "StartY": 100.0,
+            "EndX": 9.0,
+            "LineWidth": 18.0,
+            "LineEndingStyle": "Butt",
+            "Preset": "alternate_theme\\presets\\lineprogress\\lines\\thick\\tiny_active_90.json",
+            "FileNameBackground": "__generated\\alternate_theme_images_widgets_lineprogress_backgrounds_line_thick_tiny_90.png",
+            "ProgressRangeMax": 100,
+            "ProgressInitialValue": 60
+          },
+          {
+            "Type": "LineProgress",
+            "Name": "lineProgress1_8",
+            "X": 486,
+            "Y": 10,
+            "Width": 18,
+            "Height": 100,
+            "Color": {
+              "Green": 240,
+              "Blue": 255
+            },
+            "StartX": 9.0,
+            "StartY": 100.0,
+            "EndX": 9.0,
+            "LineWidth": 18.0,
+            "LineEndingStyle": "Butt",
+            "Preset": "alternate_theme\\presets\\lineprogress\\lines\\thick\\tiny_active_90.json",
+            "FileNameBackground": "__generated\\alternate_theme_images_widgets_lineprogress_backgrounds_line_thick_tiny_90.png",
+            "ProgressRangeMax": 100,
+            "ProgressInitialValue": 60
+          },
+          {
+            "Type": "LineProgress",
+            "Name": "lineProgress1_7",
+            "X": 430,
+            "Y": 10,
+            "Width": 18,
+            "Height": 100,
+            "Color": {
+              "Green": 240,
+              "Blue": 255
+            },
+            "StartX": 9.0,
+            "StartY": 100.0,
+            "EndX": 9.0,
+            "LineWidth": 18.0,
+            "LineEndingStyle": "Butt",
+            "Preset": "alternate_theme\\presets\\lineprogress\\lines\\thick\\tiny_active_90.json",
+            "FileNameBackground": "__generated\\alternate_theme_images_widgets_lineprogress_backgrounds_line_thick_tiny_90.png",
+            "ProgressRangeMax": 100,
+            "ProgressInitialValue": 60
+          },
+          {
+            "Type": "LineProgress",
+            "Name": "lineProgress1_6",
+            "X": 374,
+            "Y": 10,
+            "Width": 18,
+            "Height": 100,
+            "Color": {
+              "Green": 240,
+              "Blue": 255
+            },
+            "StartX": 9.0,
+            "StartY": 100.0,
+            "EndX": 9.0,
+            "LineWidth": 18.0,
+            "LineEndingStyle": "Butt",
+            "Preset": "alternate_theme\\presets\\lineprogress\\lines\\thick\\tiny_active_90.json",
+            "FileNameBackground": "__generated\\alternate_theme_images_widgets_lineprogress_backgrounds_line_thick_tiny_90.png",
+            "ProgressRangeMax": 100,
+            "ProgressInitialValue": 60
+          },
+          {
+            "Type": "LineProgress",
+            "Name": "lineProgress1_5",
+            "X": 318,
+            "Y": 10,
+            "Width": 18,
+            "Height": 100,
+            "Color": {
+              "Green": 240,
+              "Blue": 255
+            },
+            "StartX": 9.0,
+            "StartY": 100.0,
+            "EndX": 9.0,
+            "LineWidth": 18.0,
+            "LineEndingStyle": "Butt",
+            "Preset": "alternate_theme\\presets\\lineprogress\\lines\\thick\\tiny_active_90.json",
+            "FileNameBackground": "__generated\\alternate_theme_images_widgets_lineprogress_backgrounds_line_thick_tiny_90.png",
+            "ProgressRangeMax": 100,
+            "ProgressInitialValue": 60
+          },
+          {
+            "Type": "LineProgress",
+            "Name": "lineProgress1_4",
+            "X": 262,
+            "Y": 10,
+            "Width": 18,
+            "Height": 100,
+            "Color": {
+              "Green": 240,
+              "Blue": 255
+            },
+            "StartX": 9.0,
+            "StartY": 100.0,
+            "EndX": 9.0,
+            "LineWidth": 18.0,
+            "LineEndingStyle": "Butt",
+            "Preset": "alternate_theme\\presets\\lineprogress\\lines\\thick\\tiny_active_90.json",
+            "FileNameBackground": "__generated\\alternate_theme_images_widgets_lineprogress_backgrounds_line_thick_tiny_90.png",
+            "ProgressRangeMax": 100,
+            "ProgressInitialValue": 60
+          },
+          {
+            "Type": "LineProgress",
+            "Name": "lineProgress1_3",
+            "X": 206,
+            "Y": 10,
+            "Width": 18,
+            "Height": 100,
+            "Color": {
+              "Green": 240,
+              "Blue": 255
+            },
+            "StartX": 9.0,
+            "StartY": 100.0,
+            "EndX": 9.0,
+            "LineWidth": 18.0,
+            "LineEndingStyle": "Butt",
+            "Preset": "alternate_theme\\presets\\lineprogress\\lines\\thick\\tiny_active_90.json",
+            "FileNameBackground": "__generated\\alternate_theme_images_widgets_lineprogress_backgrounds_line_thick_tiny_90.png",
+            "ProgressRangeMax": 100,
+            "ProgressInitialValue": 60
+          },
+          {
+            "Type": "LineProgress",
+            "Name": "lineProgress1_2",
+            "X": 150,
+            "Y": 10,
+            "Width": 18,
+            "Height": 100,
+            "Color": {
+              "Green": 240,
+              "Blue": 255
+            },
+            "StartX": 9.0,
+            "StartY": 100.0,
+            "EndX": 9.0,
+            "LineWidth": 18.0,
+            "LineEndingStyle": "Butt",
+            "Preset": "alternate_theme\\presets\\lineprogress\\lines\\thick\\tiny_active_90.json",
+            "FileNameBackground": "__generated\\alternate_theme_images_widgets_lineprogress_backgrounds_line_thick_tiny_90.png",
+            "ProgressRangeMax": 100,
+            "ProgressInitialValue": 60
+          },
+          {
+            "Type": "LineProgress",
+            "Name": "lineProgress1_1",
+            "X": 93,
+            "Y": 10,
+            "Width": 18,
+            "Height": 100,
+            "Color": {
+              "Green": 240,
+              "Blue": 255
+            },
+            "StartX": 9.0,
+            "StartY": 100.0,
+            "EndX": 9.0,
+            "LineWidth": 18.0,
+            "LineEndingStyle": "Butt",
+            "Preset": "alternate_theme\\presets\\lineprogress\\lines\\thick\\tiny_active_90.json",
+            "FileNameBackground": "__generated\\alternate_theme_images_widgets_lineprogress_backgrounds_line_thick_tiny_90.png",
+            "ProgressRangeMax": 100,
+            "ProgressInitialValue": 60
+          },
+          {
+            "Type": "LineProgress",
+            "Name": "lineProgress1_11",
+            "X": 655,
+            "Y": 10,
+            "Width": 18,
+            "Height": 100,
+            "Color": {
+              "Green": 240,
+              "Blue": 255
+            },
+            "StartX": 9.0,
+            "StartY": 100.0,
+            "EndX": 9.0,
+            "LineWidth": 18.0,
+            "LineEndingStyle": "Butt",
+            "Preset": "alternate_theme\\presets\\lineprogress\\lines\\thick\\tiny_active_90.json",
+            "FileNameBackground": "__generated\\alternate_theme_images_widgets_lineprogress_backgrounds_line_thick_tiny_90.png",
+            "ProgressRangeMax": 100,
+            "ProgressInitialValue": 60
+          },
+          {
+            "Type": "LineProgress",
+            "Name": "lineProgress1_21",
+            "X": 1215,
+            "Y": 10,
+            "Width": 18,
+            "Height": 100,
+            "Color": {
+              "Green": 240,
+              "Blue": 255
+            },
+            "StartX": 9.0,
+            "StartY": 100.0,
+            "EndX": 9.0,
+            "LineWidth": 18.0,
+            "LineEndingStyle": "Butt",
+            "Preset": "alternate_theme\\presets\\lineprogress\\lines\\thick\\tiny_active_90.json",
+            "FileNameBackground": "__generated\\alternate_theme_images_widgets_lineprogress_backgrounds_line_thick_tiny_90.png",
+            "ProgressRangeMax": 100,
+            "ProgressInitialValue": 60
+          },
+          {
+            "Type": "LineProgress",
+            "Name": "lineProgress1_20",
+            "X": 1159,
+            "Y": 10,
+            "Width": 18,
+            "Height": 100,
+            "Color": {
+              "Green": 240,
+              "Blue": 255
+            },
+            "StartX": 9.0,
+            "StartY": 100.0,
+            "EndX": 9.0,
+            "LineWidth": 18.0,
+            "LineEndingStyle": "Butt",
+            "Preset": "alternate_theme\\presets\\lineprogress\\lines\\thick\\tiny_active_90.json",
+            "FileNameBackground": "__generated\\alternate_theme_images_widgets_lineprogress_backgrounds_line_thick_tiny_90.png",
+            "ProgressRangeMax": 100,
+            "ProgressInitialValue": 60
+          },
+          {
+            "Type": "LineProgress",
+            "Name": "lineProgress1_19",
+            "X": 1103,
+            "Y": 10,
+            "Width": 18,
+            "Height": 100,
+            "Color": {
+              "Green": 240,
+              "Blue": 255
+            },
+            "StartX": 9.0,
+            "StartY": 100.0,
+            "EndX": 9.0,
+            "LineWidth": 18.0,
+            "LineEndingStyle": "Butt",
+            "Preset": "alternate_theme\\presets\\lineprogress\\lines\\thick\\tiny_active_90.json",
+            "FileNameBackground": "__generated\\alternate_theme_images_widgets_lineprogress_backgrounds_line_thick_tiny_90.png",
+            "ProgressRangeMax": 100,
+            "ProgressInitialValue": 60
+          },
+          {
+            "Type": "LineProgress",
+            "Name": "lineProgress1_18",
+            "X": 1047,
+            "Y": 10,
+            "Width": 18,
+            "Height": 100,
+            "Color": {
+              "Green": 240,
+              "Blue": 255
+            },
+            "StartX": 9.0,
+            "StartY": 100.0,
+            "EndX": 9.0,
+            "LineWidth": 18.0,
+            "LineEndingStyle": "Butt",
+            "Preset": "alternate_theme\\presets\\lineprogress\\lines\\thick\\tiny_active_90.json",
+            "FileNameBackground": "__generated\\alternate_theme_images_widgets_lineprogress_backgrounds_line_thick_tiny_90.png",
+            "ProgressRangeMax": 100,
+            "ProgressInitialValue": 60
+          },
+          {
+            "Type": "LineProgress",
+            "Name": "lineProgress1_17",
+            "X": 991,
+            "Y": 10,
+            "Width": 18,
+            "Height": 100,
+            "Color": {
+              "Green": 240,
+              "Blue": 255
+            },
+            "StartX": 9.0,
+            "StartY": 100.0,
+            "EndX": 9.0,
+            "LineWidth": 18.0,
+            "LineEndingStyle": "Butt",
+            "Preset": "alternate_theme\\presets\\lineprogress\\lines\\thick\\tiny_active_90.json",
+            "FileNameBackground": "__generated\\alternate_theme_images_widgets_lineprogress_backgrounds_line_thick_tiny_90.png",
+            "ProgressRangeMax": 100,
+            "ProgressInitialValue": 60
+          },
+          {
+            "Type": "LineProgress",
+            "Name": "lineProgress1_16",
+            "X": 935,
+            "Y": 10,
+            "Width": 18,
+            "Height": 100,
+            "Color": {
+              "Green": 240,
+              "Blue": 255
+            },
+            "StartX": 9.0,
+            "StartY": 100.0,
+            "EndX": 9.0,
+            "LineWidth": 18.0,
+            "LineEndingStyle": "Butt",
+            "Preset": "alternate_theme\\presets\\lineprogress\\lines\\thick\\tiny_active_90.json",
+            "FileNameBackground": "__generated\\alternate_theme_images_widgets_lineprogress_backgrounds_line_thick_tiny_90.png",
+            "ProgressRangeMax": 100,
+            "ProgressInitialValue": 60
+          },
+          {
+            "Type": "LineProgress",
+            "Name": "lineProgress1_15",
+            "X": 879,
+            "Y": 10,
+            "Width": 18,
+            "Height": 100,
+            "Color": {
+              "Green": 240,
+              "Blue": 255
+            },
+            "StartX": 9.0,
+            "StartY": 100.0,
+            "EndX": 9.0,
+            "LineWidth": 18.0,
+            "LineEndingStyle": "Butt",
+            "Preset": "alternate_theme\\presets\\lineprogress\\lines\\thick\\tiny_active_90.json",
+            "FileNameBackground": "__generated\\alternate_theme_images_widgets_lineprogress_backgrounds_line_thick_tiny_90.png",
+            "ProgressRangeMax": 100,
+            "ProgressInitialValue": 60
+          },
+          {
+            "Type": "LineProgress",
+            "Name": "lineProgress1_14",
+            "X": 823,
+            "Y": 10,
+            "Width": 18,
+            "Height": 100,
+            "Color": {
+              "Green": 240,
+              "Blue": 255
+            },
+            "StartX": 9.0,
+            "StartY": 100.0,
+            "EndX": 9.0,
+            "LineWidth": 18.0,
+            "LineEndingStyle": "Butt",
+            "Preset": "alternate_theme\\presets\\lineprogress\\lines\\thick\\tiny_active_90.json",
+            "FileNameBackground": "__generated\\alternate_theme_images_widgets_lineprogress_backgrounds_line_thick_tiny_90.png",
+            "ProgressRangeMax": 100,
+            "ProgressInitialValue": 60
+          },
+          {
+            "Type": "LineProgress",
+            "Name": "lineProgress1_13",
+            "X": 767,
+            "Y": 10,
+            "Width": 18,
+            "Height": 100,
+            "Color": {
+              "Green": 240,
+              "Blue": 255
+            },
+            "StartX": 9.0,
+            "StartY": 100.0,
+            "EndX": 9.0,
+            "LineWidth": 18.0,
+            "LineEndingStyle": "Butt",
+            "Preset": "alternate_theme\\presets\\lineprogress\\lines\\thick\\tiny_active_90.json",
+            "FileNameBackground": "__generated\\alternate_theme_images_widgets_lineprogress_backgrounds_line_thick_tiny_90.png",
+            "ProgressRangeMax": 100,
+            "ProgressInitialValue": 58
+          },
+          {
+            "Type": "LineProgress",
+            "Name": "lineProgress1_12",
+            "X": 710,
+            "Y": 10,
+            "Width": 18,
+            "Height": 100,
+            "Color": {
+              "Green": 240,
+              "Blue": 255
+            },
+            "StartX": 9.0,
+            "StartY": 100.0,
+            "EndX": 9.0,
+            "LineWidth": 18.0,
+            "LineEndingStyle": "Butt",
+            "FileNameBackground": "__generated\\alternate_theme_images_widgets_lineprogress_backgrounds_line_thick_tiny_90.png",
+            "ProgressRangeMax": 100,
+            "ProgressInitialValue": 60
+          },
+          {
+            "Type": "Line",
+            "Name": "line1",
+            "Y": 10,
+            "Width": 1280,
+            "Height": 2,
+            "Color": {
+              "Red": 255
+            },
+            "StartX": 1.0,
+            "StartY": 1.0,
+            "EndX": 1280.0,
+            "EndY": 1.0,
+            "LineWidth": 2.0,
+            "LineEndingStyle": "Butt",
+            "Moveable": true
+          }
+        ],
+        "Interactions": []
+      }
+    ],
+    "Name": "Akku_car",
+    "Resolution": {
+      "Width": 1280,
+      "Height": 800
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "Screen1",
+    "SelectedStartupLanguage": "GB",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "24": "LCD24bpp",
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 1280,
+        "Height": 800
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "PostGenerateTargetCommandOverride": "touchgfx update_project",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "CompileTargetCommandOverride": "make -f ../../gcc/Makefile clean && make -f ../../gcc/Makefile -j8",
+    "FlashTargetCommandOverride": "make -f ../../gcc/Makefile flash",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape",
+    "Family": "STM32H7",
+    "SubFamily": "STM32H747/757",
+    "Toolchain": "STM32CubeIDE",
+    "Platform": "m7",
+    "ProjectFile": "../../Riverdi_101STM32H7.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": [],
+    "AdditionalFeatures": [
+      "CWRVector",
+      "VectorFonts",
+      "Video"
+    ]
+  },
+  "Version": "4.24.0",
+  "CreatedBy": "4.23.0"
+}
