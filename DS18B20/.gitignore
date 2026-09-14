@@ -1,0 +1,15 @@
+# Eclipse
+.metadata
+.settings
+[Rr]elease
+[Dd]ebug
+
+Drivers
+Middlewares
+
+*.launch
+*.ld
+.cproject
+.mxproject
+
+.vscode
