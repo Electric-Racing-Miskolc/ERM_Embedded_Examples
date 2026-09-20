@@ -39,6 +39,8 @@
 /* USER CODE BEGIN PD */
 #define ALIGN_8(size)         (((size) + 7) & ~7)
 #define FLASH_START_ADDR   0x807F000
+#define FLASH_STORAGE_START_PAGE  126  // Sector 126 of Bank 2
+#define FLASH_STORAGE_PAGE_CNT  2    // Erases Sectors 126 and 127
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -52,14 +54,14 @@
 uint32_t address      = FLASH_START_ADDR; // Write tracker
 uint32_t read_address = FLASH_START_ADDR; // Read tracker
 
-TestStruct Struct1 = {
+TestStruct WriteStruct = {
 	.device_id = 9999,
 	.temperature = 25.6f,
 	.voltage = 3.3f,
 	.status = "ON!"
 };
 
-TestStruct Struct2 = {0};
+TestStruct ReadStruct = {0};
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -106,11 +108,11 @@ int main(void)
   /* USER CODE BEGIN 2 */
   #ifdef WRITE
   Flash_Erase();
-  Flash_Write(&Struct1, sizeof(TestStruct));
+  Flash_Write(&WriteStruct, sizeof(TestStruct));
   #endif
 
   #ifdef READ
-  Flash_Read(&Struct2, sizeof(TestStruct));
+  Flash_Read(&ReadStruct, sizeof(TestStruct));
   #endif
   /* USER CODE END 2 */
 
@@ -173,11 +175,16 @@ void Flash_Erase(void)
 
     FLASH_EraseInitTypeDef erase_init;
     uint32_t page_error = 0;
-
+    /*
+	As the G4 uses a dual bank architecture that explains the "erase_init.Bank = FLASH_BANK_2"
+	and it operates with 2Kb pages, so 512/2 = 256 to see how many pages there are total and that makes 128 pages per bank
+	and we erase the last 2 pages hence the "erase_init.Page = 126" and the "NbPges = 2".
+	*/
+    //important to point to the 2nd Bank of the flash memory
     erase_init.TypeErase = FLASH_TYPEERASE_PAGES;
     erase_init.Banks     = FLASH_BANK_2;
-    erase_init.Page      = 126; // 0x807F000 starts at Page 126
-    erase_init.NbPages   = 2;   // Erase Page 126 and 127
+    erase_init.Page      = FLASH_STORAGE_START_PAGE; // 0x807F000 starts at Page 126
+    erase_init.NbPages   = FLASH_STORAGE_PAGE_CNT;   // Erase Page 126 and 127
 
     HAL_FLASHEx_Erase(&erase_init, &page_error);
 

@@ -124,11 +124,11 @@ int main(void)
   /* USER CODE BEGIN 2 */
   #ifdef WRITE
   Flash_Format_Storage();
-  Flash_Write(address, &WriteStruct, sizeof(WriteStruct));
+  Flash_Write(address, &WriteStruct, sizeof(TestStruct));
   #endif
 
   #ifdef READ
-  Flash_Copy_Struct(&ReadStruct, sizeof(ReadStruct));
+  Flash_Copy_Struct(&ReadStruct, sizeof(TestStruct));
   #endif
   /* USER CODE END 2 */
 
@@ -369,6 +369,11 @@ void Flash_Format_Storage(void){
 
 	erase_init.TypeErase = FLASH_TYPEERASE_SECTORS;
 
+	/*
+	As the G4 uses a dual bank architecture that explains the "erase_init.Bank = FLASH_BANK_2"
+	and it operates with 8Kb sectors, so 2048/4 = 256 to see how many pages there are total and that makes 128 sectors per bank
+	and we erase the last 2 sectors hence the "erase_init.Sector = 126" and the "NbSectors = 2".
+	*/
 	//important to point to the 2nd Bank of the flash memory
 	erase_init.Banks	 = FLASH_BANK_2;
 
