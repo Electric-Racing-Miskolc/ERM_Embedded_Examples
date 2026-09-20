@@ -6,7 +6,7 @@ To do this, open the .ioc file and go to the "Tools" tab and go to the "Memory m
 
 Here you will see the following:
 
-![Here you will see the following](images/Screenshot1.png)
+![Here you will see the following](images/screenshot1.png)
 
 Click on the sector labeled "FLASH" and decrease the 2048kb size with the desired amount (here it is 16kb). A "+" symbol will appear above the "FLASH" sector. Create the sector, and name it whatever (here it's "FLASH_DATA").
 
