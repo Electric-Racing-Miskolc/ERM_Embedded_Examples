@@ -20,7 +20,7 @@ MEMORY
 
 To tell the IDE to use the custom linker script you made, you will need to head into the properties of the project (either right click and properties, or alt+enter on the project folder). 
 
-Head to the C/C++ Build settings, and go to the Linker then general. Click on browse and select your custom linker script, so the IDE uses this script (Note: If you don't see the browse button then extend the window).
+Head to the C/C++ Build settings, and go to the Linker section then general. Click on browse and select your custom linker script, so the IDE uses this script (Note: If you don't see the browse button then extend the window).
 
 ![Head to the C/C++ Build settings, and go to the Linker](images/Screenshot1.png)
 
