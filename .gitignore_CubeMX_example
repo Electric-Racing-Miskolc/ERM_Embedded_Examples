@@ -8,8 +8,16 @@ Drivers
 Middlewares
 
 *.launch
-*.ld
-.cproject
 .mxproject
 
 .vscode
+
+*.elf
+
+# CMake
+build
+mx.scratch
+cmake
+.clangd
+CMakePresets.json
+*.s
