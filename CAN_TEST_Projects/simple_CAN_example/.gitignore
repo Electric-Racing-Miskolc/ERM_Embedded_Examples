@@ -1,0 +1,23 @@
+# Eclipse
+.metadata
+.settings
+[Rr]elease
+[Dd]ebug
+
+Drivers
+Middlewares
+
+*.launch
+.mxproject
+
+.vscode
+
+*.elf
+
+# CMake
+build
+mx.scratch
+cmake
+.clangd
+CMakePresets.json
+*.s
