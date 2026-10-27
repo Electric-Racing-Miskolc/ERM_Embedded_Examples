@@ -115,6 +115,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+    TxData[0] = flag;
     HAL_FDCAN_AddMessageToTxFifoQ(&hfdcan1, &TxHeader1, TxData);
     HAL_Delay(500);
     /* USER CODE END WHILE */
